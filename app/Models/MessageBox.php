@@ -1,4 +1,4 @@
-<?php namespace App\Models;
+<?php namespace Notice\Models;
 
 use Illuminate\Database\Eloquent\Model;
 
@@ -13,15 +13,15 @@ class MessageBox extends Model {
 
 
     public function boxtype() {
-        return $this->belongsTo(\App\Models\Boxtype::class, 'boxtype_id', 'id');
+        return $this->belongsTo(\Notice\Models\Boxtype::class, 'boxtype_id', 'id');
     }
 
     public function tblMessage() {
-        return $this->belongsTo(\App\Models\TblMessage::class, 'msg_id', 'id');
+        return $this->belongsTo(\Notice\Models\TblMessage::class, 'msg_id', 'id');
     }
 
     public function user() {
-        return $this->belongsTo(\App\Models\User::class, 'user_id', 'user_id');
+        return $this->belongsTo(\Notice\Models\User::class, 'user_id', 'user_id');
     }
 
 

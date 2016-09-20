@@ -1,4 +1,4 @@
-<?php namespace App\Models;
+<?php namespace Notice\Models;
 
 use Illuminate\Database\Eloquent\Model;
 
@@ -13,7 +13,7 @@ class Message extends Model {
 
 
     public function user() {
-        return $this->belongsTo(\App\Models\User::class, 'user_id', 'user_id');
+        return $this->belongsTo(\Notice\Models\User::class, 'user_id', 'user_id');
     }
 
 

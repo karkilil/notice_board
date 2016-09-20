@@ -1,4 +1,4 @@
-<?php namespace App\Models;
+<?php namespace Notice\Models;
 
 use Illuminate\Database\Eloquent\Model;
 
@@ -13,7 +13,7 @@ class Role extends Model {
 
 
     public function users() {
-        return $this->hasMany(\App\Models\User::class, 'role_type', 'role_id');
+        return $this->hasMany(\Notice\Models\User::class, 'role_type', 'role_id');
     }
 
 

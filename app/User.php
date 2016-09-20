@@ -1,4 +1,4 @@
-<?php namespace App\Models;
+<?php namespace Notice\Models;
 
 use Illuminate\Database\Eloquent\Model;
 
@@ -13,23 +13,23 @@ class User extends Model {
 
 
     public function role() {
-        return $this->belongsTo(\App\Models\Role::class, 'role_type', 'role_id');
+        return $this->belongsTo(\Notice\Models\Role::class, 'role_type', 'role_id');
     }
 
     public function semester() {
-        return $this->belongsTo(\App\Models\Semester::class, 'semester_id', 'semester_id');
+        return $this->belongsTo(\Notice\Models\Semester::class, 'semester_id', 'semester_id');
     }
 
     public function messages() {
-        return $this->hasMany(\App\Models\Message::class, 'user_id', 'user_id');
+        return $this->hasMany(\Notice\Models\Message::class, 'user_id', 'user_id');
     }
 
     public function messageBoxes() {
-        return $this->hasMany(\App\Models\MessageBox::class, 'user_id', 'user_id');
+        return $this->hasMany(\Notice\Models\MessageBox::class, 'user_id', 'user_id');
     }
 
     public function notices() {
-        return $this->hasMany(\App\Models\Notice::class, 'user_id', 'user_id');
+        return $this->hasMany(\Notice\Models\Notice::class, 'user_id', 'user_id');
     }
 
 

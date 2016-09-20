@@ -1,4 +1,4 @@
-<?php namespace App\Models;
+<?php namespace Notice\Models;
 
 use Illuminate\Database\Eloquent\Model;
 
@@ -13,7 +13,7 @@ class TblMessage extends Model {
 
 
     public function messageBoxes() {
-        return $this->hasMany(\App\Models\MessageBox::class, 'msg_id', 'id');
+        return $this->hasMany(\Notice\Models\MessageBox::class, 'msg_id', 'id');
     }
 
 

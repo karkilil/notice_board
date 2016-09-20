@@ -1,4 +1,4 @@
-<?php namespace App\Models;
+<?php namespace Notice\Models;
 
 use Illuminate\Database\Eloquent\Model;
 
@@ -13,11 +13,11 @@ class Semester extends Model {
 
 
     public function faculty() {
-        return $this->belongsTo(\App\Models\Faculty::class, 'faculty_id', 'faculty_id');
+        return $this->belongsTo(\Notice\Models\Faculty::class, 'faculty_id', 'faculty_id');
     }
 
     public function users() {
-        return $this->hasMany(\App\Models\User::class, 'semester_id', 'semester_id');
+        return $this->hasMany(\Notice\Models\User::class, 'semester_id', 'semester_id');
     }
 
 
