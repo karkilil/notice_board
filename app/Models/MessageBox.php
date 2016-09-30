@@ -7,6 +7,7 @@ class MessageBox extends Model {
     /**
      * Generated
      */
+    public $timestamps = false;
 
     protected $table = 'message_box';
     protected $fillable = ['id', 'boxtype_id', 'msg_id', 'user_id'];

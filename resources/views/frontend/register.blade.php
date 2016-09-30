@@ -1,11 +1,12 @@
 @extends('frontend.layout')
-@include('frontend.nav')
 @section('content')
         <div class="row">
-            <div class="col-md-4 col-md-offset-4">
-                <div class="well">
+            <div class="col-md-7 col-md-offset-3">
+                <div class="panel panel-success">
+                    <div class="panel-heading">New Student's Registration Form</div>
+                    <div class="panel-body">
                     {!! form($form) !!}
-                    <a class="btn btn-link pull-right" style="text-decoration: none;" href="#">Goto Login</a>
+                    </div>
                 </div>
             </div>
         </div>

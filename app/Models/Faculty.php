@@ -7,7 +7,7 @@ class Faculty extends Model {
     /**
      * Generated
      */
-
+    public $timestamps = false;
     protected $table = 'faculty';
     protected $fillable = ['faculty_id', 'faculty_name'];
 

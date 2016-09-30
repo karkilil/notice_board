@@ -1,6 +1,7 @@
 <?php
 
 return [
+    'REST_API' => 'http://localhost:8005/api/',
 
     /*
     |--------------------------------------------------------------------------
@@ -12,7 +13,7 @@ return [
     | any other location as required by the application or its packages.
     */
 
-    'name' => 'My Application',
+    'name' => 'Notice Board',
 
     /*
     |--------------------------------------------------------------------------
@@ -38,7 +39,7 @@ return [
     |
     */
 
-    'debug' => env('APP_DEBUG', false),
+    'debug' => env('APP_DEBUG', true),
 
     /*
     |--------------------------------------------------------------------------

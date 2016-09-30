@@ -7,6 +7,7 @@ class Semester extends Model {
     /**
      * Generated
      */
+    public $timestamps = false;
 
     protected $table = 'semester';
     protected $fillable = ['semester_id', 'semester_name', 'faculty_id'];

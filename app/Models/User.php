@@ -7,9 +7,10 @@ class User extends Model {
     /**
      * Generated
      */
+    public $timestamps = false;
 
-    protected $table = 'user';
-    protected $fillable = ['user_id', 'fname', 'lname', 'image', 'username', 'password', 'semester_id', 'role_type'];
+    protected $table = 'users';
+    protected $fillable = ['user_id', 'fname', 'mname', 'lname', 'address', 'email', 'username', 'password', 'semester_id', 'role_type'];
 
 
     public function role() {

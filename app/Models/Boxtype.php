@@ -7,7 +7,7 @@ class Boxtype extends Model {
     /**
      * Generated
      */
-
+    public $timestamps = false;
     protected $table = 'boxtype';
     protected $fillable = ['id', 'type_name'];
 

@@ -7,6 +7,7 @@ class TblMessage extends Model {
     /**
      * Generated
      */
+    public $timestamps = false;
 
     protected $table = 'tbl_message';
     protected $fillable = ['id', 'subject', 'body', 'created_date'];

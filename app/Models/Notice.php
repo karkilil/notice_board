@@ -8,6 +8,8 @@ class Notice extends Model {
      * Generated
      */
 
+    public $timestamps = false;
+
     protected $table = 'notice';
     protected $fillable = ['notice_id', 'title', 'description', 'published_date', 'user_id'];
 

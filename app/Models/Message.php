@@ -7,6 +7,7 @@ class Message extends Model {
     /**
      * Generated
      */
+    public $timestamps = false;
 
     protected $table = 'message';
     protected $fillable = ['message_id', 'message_desc', 'user_id'];

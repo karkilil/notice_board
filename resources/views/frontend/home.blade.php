@@ -3,7 +3,7 @@
 
     <div class="col-md-6" style="padding: 0; margin-bottom: 20px;">
 
-        <div class="container">
+        <div class="container" style="margin-top: 60px;">
             <h3 style="color: #1b6d85;">View Your Notice Here</h3>
             <!-- Trigger the modal with a button -->
             <button type="button" class="btn btn-primary btn-lg" data-toggle="modal" data-target="#myModal">Open Notice</button>
@@ -38,8 +38,9 @@
             <div class="panel-heading">
                 <h3 class="panel-title">Notice Board System Log In Panel </h3>
             </div>
+
             <div class="panel-body">
-                <form method="post" action="">
+                <form method="post" action="#" novalidate>
                 <div class="form-group">
                     <div class="input-group">
                         <span class="input-group-addon">

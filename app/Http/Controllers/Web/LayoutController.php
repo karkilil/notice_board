@@ -19,4 +19,5 @@ class LayoutController extends Controller
     {
         return view('backend.dashboard');
     }
+    
 }

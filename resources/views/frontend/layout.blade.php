@@ -6,16 +6,16 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>@yield('title')</title>
     <!-- Bootstrap -->
-    <link rel="stylesheet" type="text/css" href="/css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
     <!-- custom css -->
-    <link rel="stylesheet" type="text/css" href="/css/style.css">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
     {{--font-awesome--}}
-    <link rel="stylesheet" type="text/css" href="/font-awesome/css/font-awesome.min.css">
+    {{--<link rel="stylesheet" type="text/css" href="font-awesome/css/font-awesome.min.css">--}}
     {{--materialize--}}
     {{--<link rel="stylesheet" href="/materialize/css/materialize.min.css">--}}
 </head>
 <body>
-<img class="img" src="img/4.png" alt="rect">
+<img class="img" src="img/noticeBoard.png" alt="rect">
 
 <div class="container">
 

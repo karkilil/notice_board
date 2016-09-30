@@ -13,6 +13,16 @@ use Illuminate\Http\Request;
 |
 */
 
-Route::get('/user', function (Request $request) {
-    return $request->user();
-})->middleware('auth:api');
+//Route::get('/user', function (Request $request) {
+//    return $request->user();
+//})->middleware('auth:api');
+
+$api=app('Dingo\Api\Routing\Router');
+
+$api->version('v1',['namespace'=>'Notice\Http\Controllers\Api'],function ($api){
+    
+    $api->get('faculty',['uses'=>'UserController@getFaculty']);
+    $api->get('semester',['uses'=>'UserController@getSemester']);
+
+    $api->any('register',['uses'=>'UserController@getRegister']);
+});
